@@ -8,18 +8,3 @@ array =[913, 578, 245, 754, 321, 987, 502, 689, 123, 876,
         701, 333, 868, 524, 161, 749, 615, 892, 387, 142,
         881, 556, 223, 742, 308, 974, 489, 657, 279, 810,
         173, 926, 671, 343, 790, 258, 925, 603, 216, 671]
-
-def bubble(array):
-    sorting_area = len(array)
-    
-    while sorting_area > 0 :
-        for i in range(1,sorting_area):
-            if array[i-1] > array[i]:
-                array[i-1] , array[i] = array[i] , array[i-1]
-        sorting_area -= 1
-    return array
-
-bubble(array)
-
-#Time Complexity : O(n^2)
-#Space Complexity : O(1)

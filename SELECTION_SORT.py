@@ -20,6 +20,6 @@ def Select(arr):
         arr[largest] ,arr[sorting_area] = arr[sorting_area] ,arr[largest]
         sorting_area -= 1
     return arr
-
-
 Select(array)
+#Time Complexity : O(n^2)
+#Space Complexity : O(1)
