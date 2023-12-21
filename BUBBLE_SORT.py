@@ -20,6 +20,14 @@ def bubble(array):
     return array
 
 bubble(array)
-
+#recursive bubble sort
+def recb(arr,i=0):
+    if i+1 >= len(arr):
+        return arr
+    for j in range(i,len(arr)):
+        if arr[i] > arr[j]:
+            arr[i] , arr[j] = arr[j] , arr[i]
+    
+    return recb(arr,i+1)
 #Time Complexity : O(n^2)
 #Space Complexity : O(1)
