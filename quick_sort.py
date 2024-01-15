@@ -19,8 +19,8 @@ def QuickSort(arr,start,end):
             left += 1
             right -= 1
         
-        QuickSort(arr,start,pivot)
-        QuickSort(arr,pivot+1,end)
+        QuickSort(arr,start,right)
+        QuickSort(arr,left,end)
 QuickSort(array,0,len(array)-1)
 print(array)
  
